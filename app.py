@@ -15,7 +15,7 @@ def render():
             "current_day": datetime.now().strftime('%A'),
             "utc_time": str(datetime.utcnow()),
             "track": track,
-            "github_file_url": "",
+            "github_file_url": "https://github.com/Rashnotech/HNG_backend/blob/main/app.py",
             "github_repo_url": "https://github.com/Rashnotech/HNG_backend",
             "status_code": 200
         }
