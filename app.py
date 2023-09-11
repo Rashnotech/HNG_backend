@@ -25,6 +25,3 @@ def render():
         data = {'error': 'Missing parameter.', 'status_code': 400}
         response = json.dumps(data)
         return response
-
-if __name__ == '__main__':
-    app.run()
