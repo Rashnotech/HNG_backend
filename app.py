@@ -20,8 +20,8 @@ def render():
             "status_code": 200
         }
         response = json.dumps(data)
-        return response
+        return response, 200, {'Content-Type': 'application/json'}
     else:
         data = {'error': 'Missing parameter.', 'status_code': 400}
         response = json.dumps(data)
-        return response
+        return response, 400, {'Content-Type': 'application/json'}
